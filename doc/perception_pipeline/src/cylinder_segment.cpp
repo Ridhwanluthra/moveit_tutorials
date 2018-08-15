@@ -107,6 +107,7 @@ public:
     std::vector<moveit_msgs::CollisionObject> collision_objects;
     collision_objects.push_back(collision_object);
     planning_scene_interface.applyCollisionObjects(collision_objects);
+    planning_scene_interface.applyCollisionObject(collision_object);
     // END_SUB_TUTORIAL
   }
 
